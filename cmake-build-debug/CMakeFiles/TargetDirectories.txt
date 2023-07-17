@@ -1,0 +1,3 @@
+C:/Users/44380/CLionProjects/learn-net/cmake-build-debug/CMakeFiles/learn_net.dir
+C:/Users/44380/CLionProjects/learn-net/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/44380/CLionProjects/learn-net/cmake-build-debug/CMakeFiles/rebuild_cache.dir
