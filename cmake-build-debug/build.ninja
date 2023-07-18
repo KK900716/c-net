@@ -55,6 +55,12 @@ build CMakeFiles/learn_net.dir/main.c.obj: C_COMPILER__learn_net_Debug C$:/Users
   OBJECT_DIR = CMakeFiles\learn_net.dir
   OBJECT_FILE_DIR = CMakeFiles\learn_net.dir
 
+build CMakeFiles/learn_net.dir/win/win.c.obj: C_COMPILER__learn_net_Debug C$:/Users/44380/CLionProjects/learn-net/win/win.c || cmake_object_order_depends_target_learn_net
+  DEP_FILE = CMakeFiles\learn_net.dir\win\win.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\learn_net.dir
+  OBJECT_FILE_DIR = CMakeFiles\learn_net.dir\win
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target learn_net
@@ -63,7 +69,7 @@ build CMakeFiles/learn_net.dir/main.c.obj: C_COMPILER__learn_net_Debug C$:/Users
 #############################################
 # Link the static library liblearn_net.a
 
-build liblearn_net.a: C_STATIC_LIBRARY_LINKER__learn_net_Debug CMakeFiles/learn_net.dir/main.c.obj
+build liblearn_net.a: C_STATIC_LIBRARY_LINKER__learn_net_Debug CMakeFiles/learn_net.dir/main.c.obj CMakeFiles/learn_net.dir/win/win.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\learn_net.dir
   POST_BUILD = cd .
@@ -86,6 +92,12 @@ build CMakeFiles/main.dir/main.c.obj: C_COMPILER__main_Debug C$:/Users/44380/CLi
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir
 
+build CMakeFiles/main.dir/win/win.c.obj: C_COMPILER__main_Debug C$:/Users/44380/CLionProjects/learn-net/win/win.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\win\win.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\win
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -94,7 +106,7 @@ build CMakeFiles/main.dir/main.c.obj: C_COMPILER__main_Debug C$:/Users/44380/CLi
 #############################################
 # Link the executable main.exe
 
-build main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.obj
+build main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.obj CMakeFiles/main.dir/win/win.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\main.dir
