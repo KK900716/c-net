@@ -7,3 +7,4 @@ link_libraries(ws2_32 wsock32)
 
 add_library(learn_net main.c)
 
+add_executable(main main.c)

@@ -71,6 +71,39 @@ build liblearn_net.a: C_STATIC_LIBRARY_LINKER__learn_net_Debug CMakeFiles/learn_
   TARGET_FILE = liblearn_net.a
   TARGET_PDB = learn_net.a.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target main
+
+
+#############################################
+# Order-only phony target for main
+
+build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
+
+build CMakeFiles/main.dir/main.c.obj: C_COMPILER__main_Debug C$:/Users/44380/CLionProjects/learn-net/main.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\main.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main
+
+
+#############################################
+# Link the executable main.exe
+
+build main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = main.exe
+  TARGET_IMPLIB = libmain.dll.a
+  TARGET_PDB = main.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -99,6 +132,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build learn_net: phony liblearn_net.a
 
+build main: phony main.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -107,7 +142,7 @@ build learn_net: phony liblearn_net.a
 #############################################
 # Folder: C:/Users/44380/CLionProjects/learn-net/cmake-build-debug
 
-build all: phony liblearn_net.a
+build all: phony liblearn_net.a main.exe
 
 # =============================================================================
 # Built-in targets
