@@ -3,4 +3,7 @@ project(learn_net C)
 
 set(CMAKE_C_STANDARD 11)
 
+link_libraries(ws2_32 wsock32)
+
 add_library(learn_net main.c)
+

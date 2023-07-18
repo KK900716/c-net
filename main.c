@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <winsock.h>
 
+#pragma comment(lib, "ws2_32.lib")
+
 int main(int argc, char *argv[]) {
     WSADATA wasData;
     SOCKET hServSock, hClintSock;
